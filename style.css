@@ -1,0 +1,135 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: hsl(40, 98%, 92%);
+    position: relative;
+}
+p {
+    color: hsl(203, 94%, 20%);
+    font-size: 1.2rem;
+}
+h1, h2, h3 {
+    color: hsl(203, 94%, 20%);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: hsl(40, 98%, 86%);
+    width: 94%;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%
+}
+nav li {
+    display: inline-block;
+    color: hsl(203, 94%, 20%);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+#aboutMe img {
+    float: right;
+    width: 40%;
+    height: auto;
+    max-width: 400px;
+    min-width: 250px;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+    border: 3px solid hsl(187, 47%, 29%);
+}
+#aboutMe p {
+    text-align: justify;
+    
+}
+#projectList {
+    display: flex;
+    flex-direction: column;
+}
+#projects img {
+    float: right;
+    width: 40%;
+    border: 3px solid hsl(187, 47%, 29%);
+}
+#projects p {
+    margin-right: 55%;
+    text-align: justify;
+}
+#tcHidden, #dgHidden, #tcsHidden {
+    display: none;
+}
+#projectList h3 {
+    background-color: hsl(40, 98%, 86%);
+    border: 3px solid hsl(187, 47%, 29%);
+}
+button {
+    background-color: hsl(40, 98%, 86%);
+    border: 3px solid hsl(187, 47%, 29%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#skills {
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+footer li {
+    display: inline-block;
+}
+#projectsMobile {
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    #projects {
+        display: none;
+    }
+    #projectsMobile {
+        display: inline;
+    }
+    #projectsMobile img {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: auto;
+        border: 3px solid hsl(187, 47%, 29%);
+    }
+    #projectsMobile p {
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 560px) {
+    #footNav2, #footNav3, #footNav4 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #aboutMe img {
+        float: none;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+#contact ul {
+    list-style-type: none;
+}
+#bottomNavContact {
+    text-align: right;
+}
+#contactFooter {
+    display: flex;
+    justify-content: end;
+}
